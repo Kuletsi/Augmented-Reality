@@ -18,27 +18,24 @@
 
     <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
         arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
- 
-        <a-entity id="annyang" annyang-speech-recognition></a-entity>
 
-        <a-entity id="speech"
-            speech-command__show="command: start; type: attribute; attribute: visible; targetElement: #snow; value: true;"
-            speech-command__hide="command: stop; type: attribute; attribute: visible; targetElement: #snow; value: false;">
+        <a-assets>
+            <img id="my-image" src="assets/mou_halase_to_laptop.jpg">
+        </a-assets>
 
-        </a-entity>
+        <a-marker-camera type='pattern' url='assets/pattern-DPSDMarker.patt'>
 
-        <a-entity id="snow" position="0 2.25 -15" particle-system="preset: snow; color: #f4c2c2 "></a-entity> 
+            <a-marker type='pattern' url='assets/pattern-DPSDMarker.patt'>
 
-        <a-marker preset="hiro">
+                <a-text value="Gelena-Ilektra Kouletsi" font="sourcecodepro" color="#ffc1cc" position="-1.2 1 -1" rotation="-440 0 0"></a-text>
 
-            <a-entity id="box" geometry="primitive: box; width: 2; depth: 2; height: 2" position="0 0 2"
-                material="color: #ffffff"></a-entity>
-            <a-entity id="cylinder" geometry="primitive: cylinder; width: 0.2; depth: 1 height: 0.2" position="-2 2 0"
-                material="color: #d62e02"></a-entity>
-            <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="2 3 -1"
-                material="color: #a20160"></a-entity>
+                <a-image src="#my-image" rotation="-440 0 0" width="1.5" height="1.5"></a-image> -->
 
-        </a-marker>
+            </a-marker>
+
+
+        </a-marker-camera>
+
 
         <a-entity camera></a-entity>
 
