@@ -21,20 +21,38 @@
 
         <a-assets>
             <img id="my-image" src="assets/mou_halase_to_laptop.jpg">
+            <img id="heart" src="assets/heart.png">
+            <a-asset-item id="HydrogenAtom" src="assets/HydrogenAtom.gltf"></a-asset-item>
+            <a-asset-item id="OxygenAtom" src="assets/OxygenAtom.gltf"></a-asset-item>
+            <a-asset-item id="WaterMolecule" src="assets/WaterMolecule.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker-camera type='pattern' url='assets/pattern-DPSDMarker.patt'>
 
-            <a-marker type='pattern' url='assets/pattern-DPSDMarker.patt'>
+        <a-marker type='pattern' url='assets/pattern-DPSDMarker.patt'>
 
-                <a-text value="Gelena-Ilektra Kouletsi" font="sourcecodepro" color="#ffc1cc" position="-1.2 1 -1" rotation="-440 0 0"></a-text>
+            <a-text value="Gelena-Ilektra Kouletsi" font="sourcecodepro" color="#ffc1cc" position="-1.2 1 -1"
+                rotation="-440 0 0"></a-text>
 
-                <a-image src="#my-image" rotation="-440 0 0" width="1.5" height="1.5"></a-image> -->
+            <a-image src="#my-image" rotation="-440 0 0" width="2" height="1.5"></a-image>
+            <a-image src="#heart" rotation="-440 0 0" width="0.5" height="0.5" position="-0.4 2 -0.3"></a-image>
 
-            </a-marker>
+        </a-marker>
 
+        <a-marker type='pattern' url='assets/pattern-card-H.patt'>
 
-        </a-marker-camera>
+            <a-entity gltf-model="#HydrogenAtom"
+                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:100 0 0; to: 100 360 0; loop: true;">
+            </a-entity>
+            
+        </a-marker>
+
+        <a-marker type='pattern' url='assets/pattern-card-O.patt'>
+
+            <a-entity gltf-model="#OxygenAtom"
+                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:100 0 0; to: 100 360 0; loop: true;">
+            </a-entity>
+
+        </a-marker>
 
 
         <a-entity camera></a-entity>
