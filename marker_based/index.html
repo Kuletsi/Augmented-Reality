@@ -16,6 +16,65 @@
 
 <body style="margin : 0px; overflow: hidden;">
 
+
+    <!-- The code for the third deliverable that doesn't work -->
+    <script>
+    AFRAME.registerComponent("marker-distance", {
+
+        tick: function () {
+
+            this.markerDistance()
+        },
+
+        markerDistance: function () {
+
+
+            var marker1 = document.querySelector("#HydrogenMarker")
+            var marker2 = document.querySelector("#OxygenMarker")
+
+            var marker1Pos, marker2Pos
+
+            marker1Pos = new THREE.Vector3();
+            marker1.object3D.getWorldPosition(marker1Pos);
+
+            marker2Pos = new THREE.Vector3();
+            marker2.object3D.getWorldPosition(marker2Pos);
+
+            //distance
+            var markerDistance = marker1Pos.distanceTo(marker2Pos);
+
+
+            var entity1 = document.querySelector('#HydrogenAtom')
+            var entity2 = document.querySelector('#OxygenAtom')
+            var entity3 = document.querySelector('#WaterMolecule')
+
+
+            if (marker1Pos.object3D.visible == true || marker2Pos.object3D.visible == true) {
+
+                entity1.setAttribute('visible', true)
+                entity2.setAttribute('visible', true)
+                entity3.setAttribute('visible', false)
+
+            }
+
+            else if (marker1Pos.object3D.visible == true && marker2Pos.object3D.visible == true && markerDistance < 2) {
+
+                entity1.setAttribute('visible', false)
+                entity2.setAttribute('visible', false)
+                entity3.setAttribute('visible', true)
+            }
+
+            else (marker1Pos.object3D.visible == false || marker2Pos.object3D.visible == false)
+            {
+
+                entity3.setAttribute('visible', false)
+            }
+
+        }
+    });
+
+</script>
+
     <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
         arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
@@ -38,18 +97,18 @@
 
         </a-marker>
 
-        <a-marker type='pattern' url='assets/pattern-card-H.patt'>
+        <a-marker type='pattern' id="HydrogenMarker" url='assets/pattern-card-H.patt'>
 
             <a-entity gltf-model="#HydrogenAtom"
-                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 180; to: 180 360 180; loop: true;">
+                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 0; to: 180 360 0; loop: true;">
             </a-entity>
             
         </a-marker>
 
-        <a-marker type='pattern' url='assets/pattern-card-O.patt'>
+        <a-marker type='pattern' id="OxygenMarker" url='assets/pattern-card-O.patt'>
 
             <a-entity gltf-model="#OxygenAtom"
-                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 180; to: 180 360 180; loop: true;">
+                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 0; to: 180 360 0; loop: true;">
             </a-entity>
 
         </a-marker>
