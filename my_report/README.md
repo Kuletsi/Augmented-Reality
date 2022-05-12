@@ -22,7 +22,8 @@ For the <b> third task</b>, at first I found the code from the link that was giv
 # 2nd Deliverable
 The second deliverable consisted of 3 tasks. 
 The first task was making a custom marker which when read displays an image and text. I made a square with my registry number written on it in photoshop and I uploaded it in <a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html"> Custom marker generator </a>. Then I added it to my code and used one of the objects from the previous deliverable to test if it was working. It took some back and forth trying different fonts and sizes, but also bigger borders in the generator to get it to recognize my marker. After that I made the markers for Hydrogen and for Oxygen (since I was accustomed with the site) for later usage. After that I tried to insert my text (my name). At first I did it with another tag (I think I somehow did it with a-entity, but it was 3 weeks ago and I honestly don't remember) but then I found a-text and it behaved much better so I kept that. The text appeared flat when i first put it in, so I rotated it on the x axis. I did the same with the the image I chose. Later I also added a png image of a heart and I combined the three elements so they could all be visible (by editing their positions). Furthermore I changed the font of the a-text and the color. 
-The second task was displaying 3D animations of the Hydrogen and the Oxygen atoms, by reading custom markers. I had made the markers previously. I made the 3D animations using blender and following a youtube video <a href="https://www.youtube.com/watch?v=kVBUzAnBcck&ab_channel=NEYOVA">. I added colors and letters, and also played a bit with the texture and animation, which I learned how to do from various sources, by googling my queries. 
+The second task was displaying 3D animations of the Hydrogen and the Oxygen atoms, by reading custom markers. I had made the markers previously. I made the 3D animations using blender and following a youtube video <a href="https://www.youtube.com/watch?v=kVBUzAnBcck&ab_channel=NEYOVA"> a youtube video </a>. I added colors and letters, and also played a bit with the texture and animation, which I learned how to do from various sources, by googling my queries. I tried various formats and ways of exporting (as a video, as a gif etc) but then I found I that the format needed was gltf . I exported it as a gltf by following  <a href="https://www.youtube.com/watch?v=p7OPRoT6FkY&ab_channel=DesignerHacks"> youtube videos </a> again and  <a href="https://blender.stackexchange.com/questions/120385/how-do-you-export-gltf-from-blender"> gooogling </a>.
+
 
 
 # 3rd Deliverable 
@@ -40,6 +41,7 @@ The second task was displaying 3D animations of the Hydrogen and the Oxygen atom
   <li> <a href="https://www.color-hex.com/"> Hex codes </a> </li>
   <li> <a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html"> Custom marker generator </a> </li>
   <li> <a href="https://www.youtube.com/watch?v=kVBUzAnBcck&ab_channel=NEYOVA"> Blender 3D animation turtorial </a> </li>
+  <li> <a href="https://aframe.io/docs/1.3.0/components/gltf-model.html"> Gltf model A-frame </a> </li>
 </ul>
 
 
