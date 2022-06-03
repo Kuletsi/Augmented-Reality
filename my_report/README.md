@@ -29,13 +29,31 @@ The **third task** was showing a third animation displaying a water molecule whe
 
 
 # 3rd Deliverable 
+The **first task** was adding a 3D model of a place of interest and editing the coordinates in the properties of the a-entity accordingly. My first place of interest was Petra, in Jordan (which was also one of the 7 wonders) but I didn't have much luck finding a suitable 3D model on sketchfab. Then I decided to use  <a href="https://sketchfab.com/3d-models/fontaine-de-lobservatoire-paris-2fd367e20a32409b9e85a812b09f152c"> a 3D model of a parisian fountain called _Fontaine de l'observatoire_ </a>. I downloaded the model and inserted it inside my code - linking it to my assets. I Also searched for the coordinates of the fountain on google maps, <br>
+![coordinates fontaine](https://user-images.githubusercontent.com/101418644/171959510-24bb323e-b84e-4121-a871-fa07cdcb36c9.JPG)
+and then copy pasted them to <br>
+![gps entity](https://user-images.githubusercontent.com/101418644/171959292-67d301e6-9488-4b1d-a493-6135801d2bf8.JPG) <br>
+It looked like this (together with the second task) <br>
+![Capture](https://user-images.githubusercontent.com/101418644/171959523-b4d34642-e3c4-4ce4-92a5-32558a5a6ed1.JPG)<br>
+On the screencap above the gltf model was rotating, I edited the rotate property but later decided not to keep it since I couldn't find a way to make the text static and not follow the 3D model (as it can be seen on the picture). <br>
+While uploading the code to GitHub I was suprised to discover that there's a limit of 25MB to the files, and I wasn't aware that my 3D model was _an astonishing 65MB_. So I changed it with another, simpler fountain: <br>
 
+![stupid fountain](https://user-images.githubusercontent.com/101418644/171960155-d39979b0-a9a5-42bc-846c-c95138b1ba51.JPG) <br>
+
+The **second task** was adding an action to the 3D model, so when clicked it shows text. I found the code for that  <a href="https://glitch.com/~salty-partner-1">here </a> . I edited it so it would fit my code. I also added _class="click"_ and _class"clickable"_ to the _a-entity_ and the _a-text_, accordingly. I copy pasted the _a-text_ from the previous deliverable, and I just changed the value of the text to the name of the fountain. It took some back and forth but I managed to get the positions and the click to work. <br>
 
 The **third task** was editing Syros.html My place of interest was Kini Beach. I searched for the place in google maps and found it's coordinates.
-![kini coordinates](https://user-images.githubusercontent.com/101418644/171952627-7a3b1201-e8e3-41ef-a6ed-118f6c6338f0.JPG)
+![kini coordinates](https://user-images.githubusercontent.com/101418644/171952627-7a3b1201-e8e3-41ef-a6ed-118f6c6338f0.JPG)<br>
+Then I found 4 images on google images of Kini and I put them inside the a-entity with the gps-entity-place. <br>
+_![kini](https://user-images.githubusercontent.com/101418644/171957308-1bce63e4-a417-4174-8582-39d612c57f89.JPG)
 
-
+To test if my code was working properly I added copy pasted <br>
+![simulation](https://user-images.githubusercontent.com/101418644/171957572-47bcdfa5-37ae-4821-b757-1f1ace9834f0.JPG)<br>
+that was given to us in the previous task 
 # Conclusions
+My conclusion is that from now on I will always check the size of the files that I'm using. 
+Besides that, a very nice assignment. 
+
 
 
 # Sources
@@ -50,6 +68,11 @@ The **third task** was editing Syros.html My place of interest was Kini Beach. I
   <li> <a href="https://aframe.io/docs/1.3.0/components/gltf-model.html"> Gltf model A-frame </a> </li>
   <li> <a href="https://stackoverflow.com/questions/67578125/a-frame-show-gltf-model-if-variable-has-a-certain-value"> Visible atribute for a-entity </a> </li>
   <li> <a href="https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js"> Getting a markers position </a> </li>
+  <li> <a href="https://sketchfab.com/search?type=models"> Sketchfab </a> </li>
+  <li> <a href="https://sketchfab.com/3d-models/fontaine-de-lobservatoire-paris-2fd367e20a32409b9e85a812b09f152c"> Sketchfab - fontaine de l'observatoire </a> </li>
+  <li> <a href="https://sketchfab.com/3d-models/medieval-fountain-empty-free-952a9c257db641229902c36abb97e8bc"> Sketchfab - Medieval fountain </a> </li>
+
+  
 
   
 </ul>
