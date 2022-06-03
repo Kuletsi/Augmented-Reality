@@ -31,6 +31,10 @@ The **third task** was showing a third animation displaying a water molecule whe
 # 3rd Deliverable 
 
 
+The **third task** was editing Syros.html My place of interest was Kini Beach. I searched for the place in google maps and found it's coordinates.
+![kini coordinates](https://user-images.githubusercontent.com/101418644/171952627-7a3b1201-e8e3-41ef-a6ed-118f6c6338f0.JPG)
+
+
 # Conclusions
 
 
