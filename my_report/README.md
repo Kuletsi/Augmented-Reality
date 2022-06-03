@@ -30,7 +30,7 @@ The **third task** was showing a third animation displaying a water molecule whe
 
 # 3rd Deliverable 
 The **first task** was adding a 3D model of a place of interest and editing the coordinates in the properties of the a-entity accordingly. My first place of interest was Petra, in Jordan (which was also one of the 7 wonders) but I didn't have much luck finding a suitable 3D model on sketchfab. Then I decided to use  <a href="https://sketchfab.com/3d-models/fontaine-de-lobservatoire-paris-2fd367e20a32409b9e85a812b09f152c"> a 3D model of a parisian fountain called _Fontaine de l'observatoire_ </a>. I downloaded the model and inserted it inside my code - linking it to my assets. I Also searched for the coordinates of the fountain on google maps, <br>
-![coordinates fontaine](https://user-images.githubusercontent.com/101418644/171959510-24bb323e-b84e-4121-a871-fa07cdcb36c9.JPG)
+![coordinates fontaine](https://user-images.githubusercontent.com/101418644/171959510-24bb323e-b84e-4121-a871-fa07cdcb36c9.JPG)<br>
 and then copy pasted them to <br>
 ![gps entity](https://user-images.githubusercontent.com/101418644/171959292-67d301e6-9488-4b1d-a493-6135801d2bf8.JPG) <br>
 It looked like this (together with the second task) <br>
